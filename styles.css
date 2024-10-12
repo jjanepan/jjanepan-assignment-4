@@ -1,0 +1,77 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e9ecef;
+}
+
+h1 {
+    color: #444;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+input[type="text"] {
+    padding: 12px;
+    width: 280px;
+    font-size: 18px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#results {
+    width: 100%;
+    max-width: 660px;
+    margin-top: 40px;
+}
+
+/* Style each result with a clean border */
+.result {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+    margin-bottom: 20px;
+}
+
+.result p {
+    margin: 0;
+    font-size: 15px;
+    color: #666;
+}
+
+/* Enhanced visual for similarity score */
+.similarity-score {
+    font-weight: bold;
+    margin-top: 15px;
+    color: #28a745;
+    display: block;
+}

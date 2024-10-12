@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSA Search Engine</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <!-- Add Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>LSA Search Engine</h1>
+    <form id="searchForm">
+        <input type="text" id="query" placeholder="Enter search query" required>
+        <button type="submit">Search</button>
+    </form>
+    <div id="results"></div>
+    <canvas id="chart"></canvas>
+    
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
